@@ -1,27 +1,23 @@
 {
-  "name": "react-native-dice",
-  "version": "1.0.0",
-  "description": "Dice made with React Native",
-  "private": true,
-  "main": "./src/index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "exp start",
-    "lint": "standard ./src/*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
   },
-  "keywords": [
-    "dice",
-    "react native"
-  ],
-  "author": "Niko Ruotsalainen",
-  "license": "MIT",
   "dependencies": {
-    "expo": "29.0.0",
-    "react": "16.4.2",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
+    "expo": "^34.0.1",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
+    "react-native-svg": "~9.5.1 ",
+    "react-native-web": "^0.11.4",
     "styled-components": "3.4.5"
   },
   "devDependencies": {
-    "standard": "12.0.1"
-  }
+    "babel-preset-expo": "^6.0.0"
+  },
+  "private": true
 }

@@ -1,11 +1,15 @@
 import React from 'react'
-import { Svg } from 'expo'
+import { Svg, Rect, Circle } from 'react-native-svg'
+
+const l = 25;
+const c = 50;
+const b = 75;
 
 const Square = props =>
-  <Svg.Rect {...props} x={4} y={4} width={94} height={94} rx={10} fill="none" stroke="#000000" strokeWidth={5} />
+  <Rect {...props} x={4} y={4} width={94} height={94} rx={10} fill="#FFF" stroke="#000000" strokeWidth={5} />
 
 const Dot = props =>
-  <Svg.Circle {...props} r={10} />
+  <Circle {...props} r={10} />
 
 const Side = props =>
   <Svg height={100} width={100}>
@@ -15,47 +19,47 @@ const Side = props =>
 
 export const SideOne = props =>
   <Side>
-    <Dot cx={50} cy={50} />
+    <Dot cx={c} cy={c} />
   </Side>
 
 export const SideTwo = props =>
   <Side>
-    <Dot cx={75} cy={75} />
-    <Dot cx={25} cy={25} />
+    <Dot cx={l} cy={b} />
+    <Dot cx={b} cy={l} />
   </Side>
 
 export const SideThree = props =>
   <Side>
-    <Dot cx={75} cy={75} />
-    <Dot cx={50} cy={50} />
-    <Dot cx={25} cy={25} />
+    <Dot cx={b} cy={b} />
+    <Dot cx={c} cy={c} />
+    <Dot cx={l} cy={l} />
   </Side>
 
 export const SideFour = props =>
   <Side>
-    <Dot cx={75} cy={75} />
-    <Dot cx={75} cy={25} />
-    <Dot cx={25} cy={75} />
-    <Dot cx={25} cy={25} />
+    <Dot cx={b} cy={b} />
+    <Dot cx={b} cy={l} />
+    <Dot cx={l} cy={b} />
+    <Dot cx={l} cy={l} />
   </Side>
 
 export const SideFive = props =>
   <Side>
-    <Dot cx={75} cy={75} />
-    <Dot cx={75} cy={25} />
-    <Dot cx={50} cy={50} />
-    <Dot cx={25} cy={75} />
-    <Dot cx={25} cy={25} />
+    <Dot cx={b} cy={b} />
+    <Dot cx={b} cy={l} />
+    <Dot cx={c} cy={c} />
+    <Dot cx={l} cy={b} />
+    <Dot cx={l} cy={l} />
   </Side>
 
 export const SideSix = props =>
   <Side>
-    <Dot cx={75} cy={75} />
-    <Dot cx={75} cy={50} />
-    <Dot cx={75} cy={25} />
-    <Dot cx={25} cy={75} />
-    <Dot cx={25} cy={50} />
-    <Dot cx={25} cy={25} />
+    <Dot cx={b} cy={b} />
+    <Dot cx={b} cy={c} />
+    <Dot cx={b} cy={l} />
+    <Dot cx={l} cy={b} />
+    <Dot cx={l} cy={c} />
+    <Dot cx={l} cy={l} />
   </Side>
 
-export default Side
+export default Side;

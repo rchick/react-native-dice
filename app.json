@@ -1,21 +1,35 @@
 {
   "expo": {
-    "name": "react-native-dice",
-    "description": "Dice made with React Native",
-    "slug": "react-native-dice",
+    "name": "Eddys Dice",
+    "slug": "eddys-dice",
+    "entryPoint" : "./App.js",
     "privacy": "public",
-    "sdkVersion": "29.0.0",
-    "version": "1.0.0",
+    "sdkVersion": "34.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.1",
     "orientation": "portrait",
-    "primaryColor": "#cccccc",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android" : {
+      "package": "com.larkinlion.eddysdice"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.larkinlion.eddysdice"
     }
   }
 }
